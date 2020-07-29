@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Retrofit</string>
+    <string name="KEY">9d9b5f77-54ee-4318-ba73-f621ef13ed2d</string>
+    <string name="URL">https://api.weather.yandex.ru/v2/</string>
+    <string name="Error400">Ошибка неверного запроса</string>
+    <string name="Error403">Нет доступа</string>
+    <string name="Error404">Cтраница не найдена</string>
+    <string name="Error500">Ошибка на сервере</string>
+    <string name="Error502">Сервер получил некорректные данные от другого сервера</string>
+    <string name="Error503">Сервер недоступен</string>
+    <string name="Error505">Ошибка сервера</string>
+    <string name="sign_in_app">Погода</string>
+    <string name="sign_in_text_bottom">Войдите в свою  учетную запись</string>
+    <string name="btn_text_sign_in">Войти</string>
+    <string name="btn_text_registration">Зарегистрироваться</string>
+    <string name="email_field">Почта</string>
+    <string name="pass_field">Пароль</string>
+    <string name="secondName_field">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="number_phone">Телефон</string>
+    <string name="already_exist_account">Аккаунт уже создан?</string>
+    <string name="new_account">Новый аккаунт</string>
+    <string name="sign_in">Вход</string>
+    <string name="login_field">Логин</string>
+    <string name="invalid_data">Неверный логин/пароль</string>
+    <string name="forgotten_data">Забыт логин/пароль</string>
+    <string name="reconstruction">Восстановление</string>
+    <string name="sent_login_pass">Отправить  новый логин/пароль</string>
+    <string name="invalid_phone">Неверно указан номер телефона</string>
+    <string name="format_phone">+()123456789-</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorLightBlue">#2779f6</color>
+    <color name="colorDarkBlue">#041c41</color>
+    <color name="ripple_effect">#0cf725</color>
+    <color name="colorSolid">#0cd7f7</color>
+    <color name="colorStroke">#b00cf7</color>
+    <color name="colorSolid2">#f70c5d</color>
+    <color name="white">#fbf3f6</color>
+    <color name="colorInvalidData">#d60b17</color>
+</resources>

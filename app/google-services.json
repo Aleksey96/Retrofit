@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "578051823654",
+    "firebase_url": "https://retrofit-23716.firebaseio.com",
+    "project_id": "retrofit-23716",
+    "storage_bucket": "retrofit-23716.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578051823654:android:6e7b0d8d8001db4948eee7",
+        "android_client_info": {
+          "package_name": "com.alexey.retrofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578051823654-vdpapj47bor0pmpgfm082qet34ll3c7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD17CPKeFlE7SDPIiLSTHKFpfU_tudDWgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578051823654-vdpapj47bor0pmpgfm082qet34ll3c7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
