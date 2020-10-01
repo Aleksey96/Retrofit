@@ -4,11 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     app:cardElevation="10dp">
 
     <TextView
-        android:id="@+id/invalidData"
+        android:id="@+id/invalidDataMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -16,7 +15,7 @@
         android:gravity="center"
         android:text="@string/invalid_phone"
         android:textColor="@color/colorInvalidData"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:visibility="invisible" />
 
     <LinearLayout
@@ -26,10 +25,10 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title_sign_in"
+            android:id="@+id/titleSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_margin="5dp"
             android:fontFamily="@font/montaga"
             android:gravity="center"
             android:text="@string/reconstruction"
@@ -37,7 +36,7 @@
             android:textSize="30sp" />
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/numberPhoneField"
+            android:id="@+id/numberPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -51,12 +50,12 @@
             app:met_baseColor="#0056d3"
             app:met_floatingLabel="highlight"
             app:met_floatingLabelPadding="4dp"
-            app:met_maxCharacters="12"
+            app:met_maxCharacters="18"
             app:met_primaryColor="#982360"
             app:met_singleLineEllipsis="true" />
 
         <Button
-            android:id="@+id/layout_registration_btn_registration"
+            android:id="@+id/btnRegistration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -66,6 +65,16 @@
             android:text="@string/sent_login_pass"
             android:textColor="@color/colorPrimaryDark" />
 
+        <TextView
+            android:id="@+id/singIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montaga"
+            android:gravity="center"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
 

@@ -24,9 +24,13 @@
     <string name="login_field">Логин</string>
     <string name="invalid_data">Неверный логин/пароль</string>
     <string name="forgotten_data">Забыт логин/пароль</string>
-    <string name="reconstruction">Восстановление</string>
-    <string name="sent_login_pass">Отправить  новый логин/пароль</string>
+    <string name="reconstruction">Восстановление \n учетных данных</string>
+    <string name="sent_login_pass">Прислать логин/пароль</string>
     <string name="invalid_phone">Неверно указан номер телефона</string>
-    <string name="format_phone">+()123456789-</string>
+    <string name="format_phone">0123456789+()-</string>
+    <string name="fragment_registration">Registration</string>
+    <string name="fragment_sign_in">SignIn</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

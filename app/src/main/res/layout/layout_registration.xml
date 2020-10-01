@@ -1,153 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent">
 
-    app:cardElevation="10dp">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:cardElevation="10dp">
 
-        <TextView
-            android:id="@+id/NewAccount"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/montaga"
-            android:gravity="center"
-            android:text="@string/new_account"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="30sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/nameField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:fontFamily="@font/montaga"
-            android:hint="@string/name"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="25sp"
-            app:met_baseColor="#0056d3"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelPadding="4dp"
-            app:met_primaryColor="#982360"
-            app:met_singleLineEllipsis="true" />
+            <TextView
+                android:id="@+id/messageInvalidData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montaga"
+                android:gravity="center"
+                android:textColor="@color/colorInvalidData"
+                android:textSize="15sp"
+                android:visibility="invisible" />
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/secondNameField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/montaga"
-            android:hint="@string/secondName_field"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="25sp"
-            app:met_baseColor="#0056d3"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelPadding="4dp"
-            app:met_primaryColor="#982360"
-            app:met_singleLineEllipsis="true" />
+            <TextView
+                android:id="@+id/NewAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montaga"
+                android:gravity="center"
+                android:text="@string/new_account"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/numberPhoneField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/montaga"
-            android:hint="@string/number_phone"
-            android:digits="@string/format_phone"
-            android:inputType="phone"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorHint="@color/colorPrimaryDark"
-            app:met_maxCharacters="12"
-            android:textSize="25sp"
-            app:met_baseColor="#0056d3"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelPadding="4dp"
-            app:met_primaryColor="#982360"
-            app:met_singleLineEllipsis="true" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/nameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/montaga"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                app:met_baseColor="#0056d3"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelPadding="4dp"
+                app:met_primaryColor="#982360"
+                app:met_singleLineEllipsis="true" />
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/emailField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/montaga"
-            android:hint="@string/email_field"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="25sp"
-            app:met_baseColor="#0056d3"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelPadding="4dp"
-            app:met_primaryColor="#982360"
-            app:met_singleLineEllipsis="true" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/surnameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/montaga"
+                android:hint="@string/secondName_field"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                app:met_baseColor="#0056d3"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelPadding="4dp"
+                app:met_primaryColor="#982360"
+                app:met_singleLineEllipsis="true" />
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/loginField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/montaga"
-            android:hint="@string/login_field"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="25sp"
-            app:met_baseColor="#0056d3"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelPadding="4dp"
-            app:met_primaryColor="#982360"
-            app:met_singleLineEllipsis="true" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/numberPhoneField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:digits="@string/format_phone"
+                android:fontFamily="@font/montaga"
+                android:hint="@string/number_phone"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                app:met_baseColor="#0056d3"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelPadding="4dp"
+                app:met_maxCharacters="12"
+                app:met_primaryColor="#982360"
+                app:met_singleLineEllipsis="true"/>
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/passField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:fontFamily="@font/montaga"
-            android:hint="@string/pass_field"
-            android:inputType="textPassword"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textSize="25sp"
-            app:met_baseColor="#0056d3"
-            app:met_floatingLabel="highlight"
-            app:met_floatingLabelPadding="4dp"
-            app:met_minCharacters="5"
-            app:met_primaryColor="#982360"
-            app:met_singleLineEllipsis="true" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/emailFieldReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/montaga"
+                android:hint="@string/email_field"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                app:met_baseColor="#0056d3"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelPadding="4dp"
+                app:met_primaryColor="#982360"
+                app:met_singleLineEllipsis="true" />
 
-        <Button
-            android:id="@+id/layout_registration_btn_registration"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/button_registration"
-            android:text="@string/btn_text_registration"
-            android:textColor="@color/colorPrimaryDark" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/loginField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/montaga"
+                android:hint="@string/login_field"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                app:met_minCharacters="8"
+                app:met_baseColor="#0056d3"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelPadding="4dp"
+                app:met_primaryColor="#982360"
+                app:met_singleLineEllipsis="true"/>
 
-        <TextView
-            android:id="@+id/textExistAccount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:fontFamily="@font/montaga"
-            android:gravity="center"
-            android:text="@string/already_exist_account"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15dp" />
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/passField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/montaga"
+                android:hint="@string/pass_field"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                app:met_baseColor="#0056d3"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelPadding="4dp"
+                app:met_minCharacters="5"
+                app:met_primaryColor="#982360"
+                app:met_singleLineEllipsis="true" />
+
+            <Button
+                android:id="@+id/button_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_registration"
+                android:text="@string/btn_text_registration"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textExistAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montaga"
+                android:gravity="center"
+                android:text="@string/already_exist_account"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
+</ScrollView>
